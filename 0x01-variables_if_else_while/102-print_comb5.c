@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-int i,j;
+int i, j;
 
 for (i = 0; i < 100; i++)
 {
@@ -24,7 +24,8 @@ if (i != 98 || j != 99)
 putchar(',');
 putchar(' ');
 }
-}             
+}
+
 }
 }
 putchar('\n');
