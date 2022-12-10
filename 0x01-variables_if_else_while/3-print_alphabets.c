@@ -1,25 +1,29 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
 
+
 /**
- * main - Prints the last digit of a randomly generated number
- *        and whether it is greater than 5, less than 6, or 0.
- * Return: Always 0.
+ * main - prints the alphabet in lowercase, and then in uppercase,
+ * followed by a new line
+ * Return: Always 0 (Success)
  */
+
 int main(void)
+
 {
-int n;
 
-srand(time(0));
+int ch;
 
-n = rand() - RAND_MAX / 2;
-printf("Last digit of %d is %d", n, n % 10);
-if ((n % 10) > 5)
-printf("and is greater than 5\n");
-else if (n % 10 == 0)
-printf("and is 0\n");
-else if (n % 10 < 6 && (n % 10) != 0)
-printf("and is less than 6 and not 0\n");
+
+for (ch = 'a'; ch <= 'z'; ch++)
+
+putchar(ch);
+
+for (ch = 'A'; ch <= 'Z'; ch++)
+
+putchar(ch);
+
+putchar('\n');
+
 return (0);
+
 }
