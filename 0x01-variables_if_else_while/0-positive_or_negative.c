@@ -4,7 +4,7 @@
 
 /**
  * main - Determine  if a number is positive, negative or zero
- *
+ * it executes, and prints it
  * Return: Alawys 0 (Success)
  */
 int main(void)
