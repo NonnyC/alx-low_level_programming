@@ -1,1 +1,1 @@
-more_functions_nested_loops
+10-print_triangle.c
