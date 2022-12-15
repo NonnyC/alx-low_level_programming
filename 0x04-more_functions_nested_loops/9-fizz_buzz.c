@@ -1,37 +1,30 @@
-#include "main.h"
 #include <stdio.h>
-
 /**
- * main - prints the numbers from 1 to 100, followed by a new line
- * but for multiples of three prints Fizz instead of the number
- * and for the multiples of five prints Buzz
- * Return: Always 0 (Success)
+ * main - function that checks for uppercase character.
+ * Return: 0
  */
-
 int main(void)
 {
-int i;
-i = 1;
-printf("%d", i);
-for (i = 2; i <= 100; i++)
+int h = 1;
+while (h <= 100)
 {
-if ((i % 3 == 0) && (i % 5 == 0))
+if (h % 3 == 0 && h % 5 == 0)
+printf("FizzBuzz ");
+else if (h % 5 == 0)
 {
-printf("FizzBuzz");
-}
-else if (i % 3 == 0)
-{
-printf("Fizz");
-}
-else if (i % 5 == 0)
+if (h == 100)
 {
 printf("Buzz");
+printf("\n");
 }
 else
-{
-printf("%d", i);
+printf("Buzz ");
 }
+else if (h % 3 == 0)
+printf("Fizz ");
+else
+printf("%d ", h);
+h++;
 }
-printf("\n");
 return (0);
 }
