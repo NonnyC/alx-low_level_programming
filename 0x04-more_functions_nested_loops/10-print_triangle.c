@@ -1,14 +1,15 @@
 #include "main h"
 
 /**
- * print_triangle - prints a triangle
- * @size: size parameter of triangle
- * Return: triangle of '#'s
+ * print_triangle - entry point
+ * Description: Prints diagonals
+ *@size: size of the triangle
+ * Return: void
  */
 
 void print_triangle(int size)
 {
-int inc1, inc2, inc3;
+int row, hashes, spaces;
 
 if (size <= 0)
 {
@@ -16,14 +17,13 @@ _putchar('\n');
 }
 else
 {
-for (inc2 = 0; inc2 <= (size - 1); inc2++)
+for (row = 1; row <= size; row++)
 {
-for (inc1 = 0; inc1 < (size - 1) - inc1; inc1++)
+for (spaces = size - row; spaces >= 1; spaces--)
 {
 _putchar(' ');
 }
-
-for (inc3 = 0; inc3 <= inc2; inc3++)
+for (hashes = 1; hashes <= row; hashes++)
 {
 _putchar('#');
 }
